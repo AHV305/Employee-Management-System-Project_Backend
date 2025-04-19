@@ -7,9 +7,9 @@ public class AccountMapper {
 
 	public static Account mapToAccount(AccountDto accountDto) {
 		Account account = new Account(
-				accountDto.id(), 
-				accountDto.accountHolderName(),
-				accountDto.balance());
+				accountDto.getId(), 
+				accountDto.getAccountHolderName(),
+				accountDto.getBalance());
 		return account;
 	}
 
